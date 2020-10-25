@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progressbar</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="bar__container">
+    <div class="bar__item">
+      <p class="bar__item__title">bar 1</p>
+      <div class="bar__item__border">
+        <div id="bar1" class="bar__item__filling">
+          <p class="bar__item__filling__percentage">50%</p>
+        </div>
+      </div>  
+    </div>
+    <div class="bar__item">
+      <p class="bar__item__title">bar 2</p>
+      <div class="bar__item__border">
+        <div id="bar2" class="bar__item__filling">
+          <p class="bar__item__filling__percentage">50%</p>
+        </div>
+      </div>  
+    </div>
+    <div class="bar__item">
+      <p class="bar__item__title">bar 3</p>
+      <div class="bar__item__border">
+        <div id="bar3" class="bar__item__filling">
+          <p class="bar__item__filling__percentage">50%</p>
+        </div>
+      </div>  
+    </div>
+    <div class="bar__item">
+      <p class="bar__item__title">bar 4</p>
+      <div class="bar__item__border">
+        <div id="bar4" class="bar__item__filling">
+          <p class="bar__item__filling__percentage">50%</p>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <div class="instruction__container">
+    <h4 id='instruction' class="instruction" class="alert">You can input numbers from 0 to 100 here.</h4>
+  </div>
+  <div class="input__container">
+    <div class="input__item">
+      <div class="input__item__title">input 1</div>
+      <input type="text" id="input1" class="input__item__placeholder"></input>
+    </div>
+    <div class="input__item">
+      <div class="input__item__title">input 2</div>
+      <input type="text" id="input2" class="input__item__placeholder"></input>
+    </div>
+    <div class="input__item">
+      <div class="input__item__title">input 3</div>
+      <input type="text" id="input3" class="input__item__placeholder"></input>
+    </div>
+    <div class="input__item">
+      <div class="input__item__title">input 4</div>
+      <input type="text" id="input4" class="input__item__placeholder"></input>
+    </div>
+  </div>
+  <button type="button" id="button" class="button">Launch</button>
+  <script src="./js/progressbar.js"></script>
+</body>
+</html>

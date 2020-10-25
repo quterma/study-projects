@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/rangeInput.css">
+</head>
+<body>
+  <img id="drawing" class="drawing noselect" src="./images/hang-1.png" alt="1">
+  <aside class="aside__wrapper noselect">
+    <div id="alphabet" class="alphabet"></div>
+    <div class="input__container">
+      <div class="inputInner__container">
+        <label class="topic__label" for="topic">Write your topic:</label>
+        <input type="text" name="topic" id="topic" class="topic__input">
+      </div>
+      <div class="inputInner__container">
+        <label for="level" class="level__label">Level:</label>
+        <input type="range" name="level" id="level" class="level" min="1" max="3" value="2">
+      </div>
+    </div>
+    <button id="startButton" class="start__button">Start</button>
+  </aside>
+  <div id="wordContainer" class="word__container noselect"></div>
+  <div id="endgameContainer" class="endgame__container">
+    <p id="endgame" class="endgame noselect"></p>
+    <p id="wordSyns" class="word__syns"></p>
+  </div>
+  <img src="" alt="boy" id='boy' class="boy">
+  <script src="./js/hangman.js"></script>
+</body>
+</html>
+
+<!-- добавить звуки. -->

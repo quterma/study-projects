@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&D Dice calculator</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="result__container">
+    <div class="result__title">Result</div>
+    <div id="resultField" class="result__field"></div>
+  </div>
+  <div class="dice__container unselectable">
+    <div class="dice__item">
+      <h4 class="dice__title">d2</h4>
+      <img class="dice__image" src="./images/d2.png" alt="2">
+    </div>
+    <div class="dice__item">
+      <h4 class="dice__title">d4</h4>
+      <img class="dice__image" src="./images/d4.png" alt="4">
+    </div>
+    <div class="dice__item">
+      <h4 class="dice__title">d6</h4>
+      <img class="dice__image" src="./images/d6.png" alt="6">
+    </div>
+    <div class="dice__item">
+      <h4 class="dice__title">d8</h4>
+      <img class="dice__image" src="./images/d8.png" alt="8">
+    </div>
+    <div class="dice__item">
+      <h4 class="dice__title">d10</h4>
+      <img class="dice__image" src="./images/d10.png" alt="10">
+    </div>
+    <div class="dice__item">
+      <h4 class="dice__title">d12</h4>
+      <img class="dice__image" src="./images/d12.png" alt="12">
+    </div>
+    <div class="dice__item">
+      <h4 class="dice__title">d20</h4>
+      <img class="dice__image" src="./images/d20.png" alt="20">
+    </div>
+    <div class="dice__item">
+      <h4 class="dice__title">d100</h4>
+      <img class="dice__image" src="./images/d100.png" alt="100">
+    </div>
+  </div>
+  <div class="load__container">
+    <div class="load__title">You chose:</div>
+    <div id="loadField" class="load__field"></div>
+    <button id="loadClear" class="load__button unselectable">Clear</button>
+  </div>
+  <div class="modifier__container">
+    <div class="modifier__title">Your modifier:</div>
+    <select id="modifierSelect" class="modifier__list" name="modifier">
+      <option class="modifier__option" value="0" selected>0</option>
+      <option class="modifier__option" value="1">1</option>
+      <option class="modifier__option" value="2">2</option>
+      <option class="modifier__option" value="3">3</option>
+      <option class="modifier__option" value="4">4</option>
+      <option class="modifier__option" value="5">5</option>
+    </select>
+  </div>
+  <div class="buttons__container">
+    <button id="roll" class="button">Roll</button>
+    <button id="reset" class="button">Reset</button>
+  </div>
+  <script src="./js/dice.js"></script>
+</body>
+</html>

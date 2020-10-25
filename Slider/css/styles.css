@@ -1,0 +1,47 @@
+body {
+  background-image: url(../images/whitebricks.jpg);
+}
+
+.slider__container {
+  margin-top: 10vh;
+  border-top: 10px solid #648c92;
+  border-bottom: 10px solid #648c92;
+  width: 100%;
+  height: 540px;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  opacity: 1;
+}
+
+.fade {
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  opacity: 0 !important;
+}
+
+.slider__button {
+  margin: 0 50px;
+  font-size: 40px;
+  cursor: pointer;
+  opacity: 50%;
+  color: #d8dde7;
+}
+
+.slider__button:hover {
+  opacity: 100%;
+  color: #ffffff;
+}
+
+.back__container {
+  margin-top: 10vh;
+  width: 100%;
+  height: 540px;
+  box-sizing: content-box;
+  /* background-image: url(../images/slide_4.jpg); */
+  border-top: 10px solid #648c92;
+  border-bottom: 10px solid #648c92;
+}

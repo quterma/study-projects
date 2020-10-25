@@ -1,0 +1,185 @@
+/* latin */
+@font-face {
+  font-family: 'Comic Neue';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Comic Neue Italic'), local('ComicNeue-Italic'), url(https://fonts.gstatic.com/s/comicneue/v1/4UaFrEJDsxBrF37olUeD96_Z5btx.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Comic Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Comic Neue Bold'), local('ComicNeue-Bold'), url(https://fonts.gstatic.com/s/comicneue/v1/4UaErEJDsxBrF37olUeD_xHM8pxULg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  background-image: url(../images/whitebricks.jpg);
+}
+
+.drawing {
+  display: inline-block;
+  width: 35%;
+  margin: 10px 0 0 2%;
+}
+
+.aside__wrapper {
+  float: right;
+  width: 50%;
+  margin: 60px 7% 0 0;
+}
+
+.alphabet {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 3px solid #694e4e;
+  border-radius: 5px;
+  height: 250px;
+  background-color: #e5eeee;
+}
+
+.alphabet__letter {
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.vowel {
+  color: #c243b7;
+}
+
+.alphabet__letter:hover {
+  opacity: 0.5;
+}
+
+.alphabet--unClickable {
+  opacity: 0.3 !important;
+}
+
+.input__container {
+  margin-top: 30px;
+  padding: 0 20px;
+  border: 3px solid #694e4e;
+  border-radius: 5px;
+  height: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 25px;
+  background-color: #e5eeee;
+}
+
+.inputInner__container {
+  height: 100%;
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.topic__input {
+  width: 250px;
+}
+
+.level {
+  width: 200px !important;
+}
+
+.start__button {
+  margin-top: 25px;
+  text-align: center;
+  margin-left: 75%;
+  width: 150px;
+  height: 50px;
+  background-image: url(../images/woodenboard-2.webp);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ccddd9;
+}
+
+.word__container {
+  width: 90%;
+  height: 18%;
+  margin: 40px 5% 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.word__letter {
+  line-height: 100%;
+  font-family: monospace;
+  font-size: 90px;
+  font-weight: 700;
+  color: #af2424;
+  margin: 0 20px;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.endgame__container {
+  background: url(../images/endgame-bubble.png) 100% no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 850px;
+  height: 600px;
+  top: -900px;
+  transition: top 2s, right 2s;
+  font-family: 'Comic Neue', cursive;
+}
+
+.endgame {
+  color: #195688;
+  font-size: 80px;
+  font-weight: 700;
+  text-align: center;
+  margin: 15% 0 5% 10%;
+  text-transform: capitalize;
+}
+
+.word__syns {
+  margin: 70px 18% 0 22%;
+  color: #195688;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.word__syns:first-letter {
+  text-transform: capitalize;
+}
+
+.boy {
+  position: absolute;
+  width: 350px;
+  bottom: 0;
+  left: 150px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
